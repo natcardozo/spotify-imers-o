@@ -3,6 +3,7 @@
     position: fixed;
     top: 0;
     left: 0;
+    bottom: 92px;
     padding: 12px;
     width: 350px;
     display: flex;
@@ -46,6 +47,7 @@
 }
 
 .sidebar__library {
+    flex-grow: 1;
     padding: 16px;
 }
 
