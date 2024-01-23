@@ -1,0 +1,136 @@
+body {
+    background-color: black;
+    color: #b3b3b3;
+    font-family: "DM Sans", sans-serif;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 12px;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.sidebar__navigation, .sidebar__library {
+    background-color: #121212;
+    border-radius: 8px;
+    padding: 0 16px;
+}
+
+.logo {
+    padding: 24px 16px 0 16px;
+}
+
+.logo img {
+    width: 80px;
+}
+
+.sidebar__items {
+    margin-top: 20px;
+    padding: 0 16px 10px 16px;
+}
+
+.sidebar__item {
+    padding: 10px 0;
+}
+
+.sidebar__item a {
+    color: #b3b3b3;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.sidebar__icon {
+    margin-right: 16px;
+    font-size: 20px;
+}
+
+.sidebar__library {
+    padding: 16px;
+}
+
+.library__header {
+    padding: 16px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.library__header h2 {
+    font-size: 16px;
+}
+
+.library__header h2 span {
+    margin-right: 16px;
+    font-size: 20px;
+}
+
+.library__header button {
+    background-color: transparent;
+    border: none;
+    color: #b3b3b3;
+    font-size: 20px;
+}
+
+.library__card {
+    padding: 16px;
+    border-radius: 8px;
+    background-color: #242424;
+    line-height: 30px;
+}
+
+.library__card p {
+    font-size: 14px;
+}
+
+.library__card button {
+    background-color: #f2f2f2;
+    color: #121212;
+    padding: 8px 16px;
+    border-radius: 16px;
+    font-weight: 600;
+    margin-top: 8px;
+}
+
+.library__info {
+    padding: 16px;
+    font-size: 11px;
+    gap: 16px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 32px;
+}
+
+.library__info a {
+    text-decoration: none;
+    color: #b3b3b3;
+    display: flex;
+    align-items: center;
+}
+
+.info__toggle {
+    font-size: 14px;
+    margin-left: 8px;
+}
+
+.library__language {
+    padding: 16px;
+}
+
+.library__language button {
+    padding: 8px 16px;
+    background-color: transparent;
+    border: 1px solid #f2f2f2;
+    border-radius: 16px;
+    color: #f2f2f2;
+    font-weight: 600;
+}
+
+.library__language button span {
+    margin-right: 8px;
+}
