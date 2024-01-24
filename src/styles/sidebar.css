@@ -3,12 +3,12 @@
     position: fixed;
     top: 0;
     left: 0;
-    bottom: 92px;
+    bottom: 76px;
     padding: 12px;
     width: 350px;
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 8px;
 }
 
 .sidebar__navigation, .sidebar__library {

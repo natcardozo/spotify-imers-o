@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spotify Imersão</title>
-    <link rel="stylesheet" href="/styles/styles.css">
+    <link rel="stylesheet" href="/src/styles/styles.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/solid.css"
         integrity="sha384-Tv5i09RULyHKMwX0E8wJUqSOaXlyu3SQxORObAI08iUwIalMmN5L6AvlPX2LMoSE" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/fontawesome.css"
@@ -13,56 +13,149 @@
 </head>
 
 <body>
-    <div class="sidebar">
-        <nav class="sidebar__navigation">
-            <div class="logo">
-                <a href="/index.html">
-                    <img src="/assets/icons/logo-spotify.png" alt="Logotipo do Spotify">
-                </a>
+    <div class="container">
+        <div class="sidebar">
+            <nav class="sidebar__navigation">
+                <div class="logo">
+                    <a href="/index.html">
+                        <img src="/src/assets/icons/logo-spotify.png" alt="Logotipo do Spotify">
+                    </a>
+                </div>
+                <div>
+                    <ul class="sidebar__items">
+                        <li class="sidebar__item">
+                            <a href="">
+                                <span class="fa fa-home sidebar__icon"></span>
+                                <span>Início</span>
+                            </a>
+                        </li>
+                        <li class="sidebar__item">
+                            <a href="">
+                                <span class="fa fa-search sidebar__icon"></span>
+                                <span>Buscar</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <section class="sidebar__library">
+                <div class="library__header">
+                    <h2><span class="fa fa-book"></span>Sua biblioteca</h2>
+                    <button><span class="fa fa-plus"></span></button>
+                </div>
+                <div class="library__card">
+                    <h3>Crie sua primeira playlist</h3>
+                    <p>É fácil, vamos te ajudar.</p>
+                    <button>Criar playlist</button>
+                </div>
+                <div class="library__info">
+                    <a href="">Legal</a>
+                    <a href="">Centro de Provacidade</a>
+                    <a href="">Política de privacidade</a>
+                    <a href="">Cookies</a>
+                    <a href="">Sobre anúncios</a>
+                    <a href="">Acessibilidade</a>
+                    <a href="">Notice at Collection</a>
+                    <a href="">You Privacy Choices <span class="fa fa-toggle-on info__toggle"></span></a>
+                    <a href="">Cookies</a>
+                </div>
+                <div class="library__language">
+                    <button><span class="fa fa-globe"></span>Português do Brasil</button>
+                </div>
+            </section>
+        </div>
+        <main>
+            <div class="main-container">
+                <nav class="header">
+                    <div class="header__navigation">
+                        <button class="arrow-left">
+                            <img src="/src/assets/icons/small-left.png" alt="Seta esquerda">
+                        </button>
+                        <button class="arrow-right">
+                            <img src="/src/assets/icons/small-right.png" alt="Seta direita">
+                        </button>
+                    </div>
+                    <div class="header__search">
+                        <img src="/src/assets/icons/search.png" alt="">
+                        <input id="search-input" class="search__input" type="text" maxlength="800" placeholder="O que você quer ouvir?">
+                    </div>
+                    <div class="header__login">
+                        <button class="subscribe">Inscreva-se</button>
+                        <button class="login">Entrar</button>
+                    </div>
+                </nav>
+                <section class="main-body">
+                    <h2 class="main-body__title">Boa tarde!</h2>
+                    <div class="main-body__content">
+                        <h3 class="content__title">Navegue por todas as seções</h3>
+                        <div class="content__cards">
+                            <div class="card card1">
+                                <span>Boas festas</span>
+                                <img src="/src/assets/playlist/1.jpeg" alt="">
+                            </div>
+                            <div class="card card2">
+                                <span>Feitos para você</span>
+                                <img src="/src/assets/playlist/2.png" alt="">
+                            </div>
+                            <div class="card card3">
+                                <span>Lançamentos</span>
+                                <img src="/src/assets/playlist/3.jpeg" alt="">
+                            </div>
+                            <div class="card card4">
+                                <span>Creators</span>
+                                <img src="/src/assets/playlist/4.jpeg" alt="">
+                            </div>
+                            <div class="card card5">
+                                <span>Para treinar</span>
+                                <img src="/src/assets/playlist/5.jpeg" alt="">
+                            </div>
+                            <div class="card card6">
+                                <span>Podcasts</span>
+                                <img src="/src/assets/playlist/6.jpeg" alt="">
+                            </div>
+                            <div class="card card7">
+                                <span>Sertanejo</span>
+                                <img src="/src/assets/playlist/7.jpeg" alt="">
+                            </div>
+                            <div class="card card8">
+                                <span>Samba e pagode</span>
+                                <img src="/src/assets/playlist/8.jpeg" alt="">
+                            </div>
+                            <div class="card card9">
+                                <span>Funk</span>
+                                <img src="/src/assets/playlist/9.jpeg" alt="">
+                            </div>
+                            <div class="card card10">
+                                <span>MPB</span>
+                                <img src="/src/assets/playlist/10.jpeg" alt="">
+                            </div>
+                            <div class="card card11">
+                                <span>Rock</span>
+                                <img src="/src/assets/playlist/11.jpeg" alt="">
+                            </div>
+                            <div class="card card12">
+                                <span>Hip hop</span>
+                                <img src="/src/assets/playlist/12.jpeg" alt="">
+                            </div>
+                            <div class="card card13">
+                                <span>Indie</span>
+                                <img src="/src/assets/playlist/13.jpeg" alt="">
+                            </div>
+                            <div class="card card14">
+                                <span>Relax</span>
+                                <img src="/src/assets/playlist/14.jpeg" alt="">
+                            </div>
+                            <div class="card card15">
+                                <span>Música latina</span>
+                                <img src="/src/assets/playlist/15.jpeg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </section>
             </div>
-            <div>
-                <ul class="sidebar__items">
-                    <li class="sidebar__item">
-                        <a href="">
-                            <span class="fa fa-home sidebar__icon"></span>
-                            <span>Início</span>
-                        </a>
-                    </li>
-                    <li class="sidebar__item">
-                        <a href="">
-                            <span class="fa fa-search sidebar__icon"></span>
-                            <span>Buscar</span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-        <section class="sidebar__library">
-            <div class="library__header">
-                <h2><span class="fa fa-book"></span>Sua biblioteca</h2>
-                <button><span class="fa fa-plus"></span></button>
-            </div>
-            <div class="library__card">
-                <h3>Crie sua primeira playlist</h3>
-                <p>É fácil, vamos te ajudar.</p>
-                <button>Criar playlist</button>
-            </div>
-            <div class="library__info">
-                <a href="">Legal</a>
-                <a href="">Centro de Provacidade</a>
-                <a href="">Política de privacidade</a>
-                <a href="">Cookies</a>
-                <a href="">Sobre anúncios</a>
-                <a href="">Acessibilidade</a>
-                <a href="">Notice at Collection</a>
-                <a href="">You Privacy Choices <span class="fa fa-toggle-on info__toggle"></span></a>
-                <a href="">Cookies</a>
-            </div>
-            <div class="library__language">
-                <button><span class="fa fa-globe"></span>Português do Brasil</button>
-            </div>
-        </section>
+        </main>
     </div>
+
     <footer class="footer">
         <div>
             <p class="footer__title">Testar o Premium de graça</p>
