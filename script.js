@@ -35,3 +35,21 @@ searchInput.addEventListener('input', () => {
 
     requestApi(searchValue)
 })
+
+const greeting = document.getElementById("greeting");
+
+function getGreetingMessage() {
+    const localTime = new Date();
+
+    const hours = localTime.getHours();
+
+    if (hours >= 6 && hours < 12) {
+        greeting.innerText = "Bom dia!";
+    } else if (hours >= 12 && hours < 18) {
+        greeting.innerText = "Boa tarde!";
+    } else {
+        greeting.innerText = "Boa noite!";
+    }
+}
+
+getGreetingMessage()
